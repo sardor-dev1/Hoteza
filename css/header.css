@@ -2,6 +2,10 @@
 
 header {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 555;
+    background-color: white;
 }
 
 nav {
@@ -21,4 +25,10 @@ nav {
     background-color: transparent;
     border-color: black;
     color: black;
+}
+
+@media (max-width:500px) {
+    .nav__btn {
+        display: none;
+    }
 }

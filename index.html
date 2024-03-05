@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoteza</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +53,7 @@
         <section id="about">
             <div class="container">
                 <div class="about__cards-wrapp df">
-                    <div class="about__card">
+                    <div  data-aos="fade-right" class="about__card">
                         <img class="about__card__img" src="./images/about/Frame (8).svg" alt="">
                         <h3 class="about__card__tittle">Действенная мера против COVID-19</h3>
                         <p class="about__card__text">Hoteza Web делает пребывание в отеле безопаснее, минимизируя
@@ -60,7 +61,7 @@
                             смартфона.
                         </p>
                     </div>
-                    <div class="about__card">
+                    <div  data-aos="fade-left" class="about__card">
                         <img class="about__card__img" src="./images/about/Frame (9).svg" alt="">
                         <h3 class="about__card__tittle">Интеграция с PMS, POS, SOS, GRMS</h3>
                         <p class="about__card__text">Hoteza Web делает пребывание в отеле безопаснее, минимизируя
@@ -168,20 +169,25 @@
                             <p class="information__card__text">QR-коды можно разместить на печатных и электронных носителях в любом месте отеля.
                                 Например, на стойке регистрации, в
                                 лифте, в номерах или на пластиковых ключах.</p>
-                        </div><div class="information__card">
+                        </div>
+                        <div class="information__card">
                             <img src="./images/information/IMAGE (19).png" alt="">
                             <h4 class="information__card__tittle">ТВ в номере</h4>
                             <p class="information__card__text">QR-коды можно разместить на печатных и электронных носителях в любом месте отеля.
                                 Например, на стойке регистрации, в
                                 лифте, в номерах или на пластиковых ключах.</p>
-                        </div><div class="information__card">
+                        </div>
+                        <div class="information__card">
                             <img src="./images/information/IMAGE (20).png" alt="">
                             <h4 class="information__card__tittle">После подключения</h4>
                             <p class="information__card__text">QR-коды можно разместить на печатных и электронных носителях в любом месте отеля.
                                 Например, на стойке регистрации, в
                                 лифте, в номерах или на пластиковых ключах.</p>
                         </div>
-                        
+                    </div>
+                    <div class="information__info">
+                        <p class="information__info__text">Мы поможем настроить каналы продвижения вашего веб-приложения, которые действительно работают! Подключим PMS, подготовим
+                        приветственный e-mail и печатные материалы, перенаправим гостей со страницы подключения Wi-Fi.</p>
                     </div>
                 </div>
             </div>
@@ -190,6 +196,10 @@
     </main>
 
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/main.js"></script>
 </body>
 

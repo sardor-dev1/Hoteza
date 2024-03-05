@@ -29,7 +29,7 @@
 }
 
 .information__card__tittle {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 400;
   padding: 15px 0 10px;
 }
@@ -46,6 +46,24 @@
   overflow: hidden;
 }
 
+.information__info {
+  background-color: hsla(84, 100%, 59%, 1);
+  border-radius: 20px;
+  margin: 50px 0;
+}
+
+.information__info__text {
+  font-size: 44px;
+  font-weight: 400;
+  padding: 5px 15px;
+
+  display: -webkit-box;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
 @media (max-width: 700px) {
   .information__cards-wrapp {
     grid-template-columns: repeat(1, 0.8fr);
@@ -53,5 +71,21 @@
     text-align: center;
     justify-content: center;
     grid-gap: 50px;
+  }
+
+  .information__info__text {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 500px) {
+  .information__info__text {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .information__card__tittle {
+    font-size: 28px;
+    font-weight: 500;
   }
 }
